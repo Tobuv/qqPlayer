@@ -10,7 +10,6 @@ html,body{
 .header{
     width: 100%;
     height: 45px;
-    background: red;
 }
 .header .logo{
     float: left;
@@ -44,24 +43,20 @@ html,body{
 .content{
     width: 100%;
     height: 460px;
-    background: blue;
 }
 .content .content_in{
     width: 1200px;
     height: 100%;
-    background: pink;
     margin: 0 auto;
 }
 .content .content_in .content_left{
     width: 800px;
     height: 100%;
-    background: pink;
     float: left;
 }
 .content_left .content_toolbar{
     width: 100%;
     height: 40px;
-    background: #000;
 }
 .content_toolbar span{
     display: inline-block;
@@ -105,17 +100,15 @@ html,body{
 .content_left .content_list{
     width: 100%;
     height: 420px;
-    background: purple;
     overflow: auto;
 }
 .content_list li{
     list-style: none;
     width: 100%;
     height: 50px;
-    background: yellow;
     line-height: 50px;
     opacity: 0.7;
-    border-bottom: 1px solid rgba(255,255,255,0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
     box-sizing: border-box;
     user-select: none;
 }
@@ -127,7 +120,6 @@ html,body{
     text-align: center;
     width: 50px;
     height: 100%;
-    background: black;
 }
 .content_list .list_check i{
     display: inline-block;
@@ -143,12 +135,10 @@ html,body{
 .content_list .list_number{
     width: 20px;
     height: 100%;
-    background: blue;
 }
 .content_list .list_name{
     width: 50%;
     height: 100%;
-    background: orangered;
 }
 .list_name .list_menu{
     margin-top: 5px;
@@ -178,7 +168,6 @@ html,body{
 .content_list .list_author{
     width: 20%;
     height: 100%;
-    background: pink;
 }
 .content_list .list_time a{
     display: inline-block;
@@ -192,7 +181,6 @@ html,body{
 .content .content_in .content_right{
     width: 400px;
     height: 100%;
-    background: #000;
     float: right;
 }
 .content_right .song_info{
@@ -224,7 +212,6 @@ html,body{
 }
 .content_right .song_lyric{
     margin-top: 30px;
-    background: pink;
 }
 .content_right .song_lyric li{
     list-style: none;
@@ -238,7 +225,6 @@ html,body{
 .footer{
     width:100%;
     height:80px;
-    background: green;
     position: absolute;
     left:0;
     bottom: 0;
@@ -246,7 +232,6 @@ html,body{
 .footer .footer_in{
     width: 1200px;
     height: 100%;
-    background: pink;
     margin: 0 auto;
 
 }
@@ -282,14 +267,12 @@ html,body{
     display: inline-block;
     width: 670px;
     height: 40px;
-    background:black; 
     position: relative;
     top: 10px;
 }
 .music_progress_info .music_progress_top{
     width: 100%;
     height: 30px;
-    background: orange;
     line-height: 30px;
     color: #fff;
 
@@ -375,7 +358,6 @@ html,body{
     display: inline-block;
     width: 100px;
     height: 40px;
-    background: #000; 
     position: relative;
     top: 10px;
 }
@@ -410,11 +392,23 @@ html,body{
 }
 .bg_player_mask{
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: -2;
     background: url("../images/song_dxj.jpg") no-repeat 0 0;
     background-size: cover;
+    filter: blur(100px);
+}
+.bg_player{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0,0,0,0.35);
 }
 ._mCS_1 .mCSB_dragger .mCSB_dragger_bar{ 
     width: 8px; 
