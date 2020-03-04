@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/index.js"></script>
     <title>qq player</title>
 </head>
@@ -36,23 +37,7 @@
                             <div class="list_author">歌手</div>
                             <div class="list_time">时长</div>
                         </li>
-                        <li class="list_music">
-                            <div class="list_check"><i></i></div>
-                            <div class="list_number">0</div>
-                            <div class="list_name">董小姐
-                                <div class="list_menu">
-                                    <a href="javascript:;" title="播放"></a>
-                                    <a href="javascript:;" title="添加到歌单"></a>
-                                    <a href="javascript:;" title="下载"></a>
-                                    <a href="javascript:;" title="分享"></a>
-                                </div>
-                            </div>
-                            <div class="list_author">宋冬野</div>
-                            <div class="list_time">
-                                <span> 04:12</span>
-                                <a href="javascript:;" title="删除"></a>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>  
             </div>
@@ -84,7 +69,7 @@
     <div class="footer">
         <div class="footer_in">
             <a href="javascript:;" class="music_pre"></a>
-            <a href="javascript:;" class="music_play music_play2"></a>
+            <a href="javascript:;" class="music_play"></a>
             <a href="javascript:;" class="music_next"></a>
             <div class="music_progress_info">
                 <div class="music_progress_top">
@@ -118,5 +103,6 @@
     </div>
     <div class="bg_player_mask"></div>
     <div class="bg_player"></div>
+    <audio src=""></audio>
 </body>
 </html>
